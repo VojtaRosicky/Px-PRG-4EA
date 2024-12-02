@@ -9,6 +9,7 @@ add_executable(${NAME}
 # Link the standard library and hardware libraries to the executable
 target_link_libraries(${NAME}
         pico_stdlib
+        hardware_pwm
         )
 
 # Enable USB output and disable UART output
